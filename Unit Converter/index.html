@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter">
+        <h2>Unit Converter</h2>        
+        <label for="input">Enter value:</label>
+        <input type="number" id="input">
+        <select id="unit">
+
+            <option value="m">Meter (m)</option>
+            <option value="cm">Centimeter (cm)</option>
+            <option value="km">KiloMeter (km)</option>
+            <option value="l">litre (l)</option>
+            <option value="kl">KiloLitre (kl)</option>
+            <option value="g">gram (g)</option>
+            <option value="kg">KiloGram (kg)</option>
+            <!-- add more units according to requirement -->
+        </select>
+        <button onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

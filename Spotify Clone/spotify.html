@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Clone</h1>
+        <div id="song-list">
+            <div class="song">
+                <img src="song1.png" alt="Song 1">
+                <div class="song-info">
+                    <h3>Song 1</h3>
+                    <p><b>Kambi Rajpuriya</b></p>
+                </div>
+            </div>
+            <div class="song">
+                <img src="image.png" alt="Song 2">
+                <div class="song-info">
+                    <h3>Song 2</h3>
+                    <p><b>KD DESIROCK</b></p>
+                </div>
+            </div>
+            <!-- Add more songs as needed -->
+        </div>
+        <audio id="audio-player" controls></audio>
+        <div class="controls">
+            <button id="prev-btn">Prev</button>
+            <button id="play-btn">Play</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+</html>
