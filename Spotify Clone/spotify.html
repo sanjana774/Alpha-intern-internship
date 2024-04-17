@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
+    <title>Spotify - Your Favourite music is here</title>
     <link rel="stylesheet" href="spotify.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
     <div class="container">
-        <h1>Spotify Clone</h1>
-        <div id="song-list">
-            <div class="song">
-                <img src="song1.png" alt="Song 1">
-                <div class="song-info">
-                    <h3>Song 1</h3>
-                    <p><b>Kambi Rajpuriya</b></p>
-                </div>
+        <div class="songlist"></div>
+        <h1>Best of NCS - No Copyright Sounds</h1>
+        <div>
+            <div class="songitem">
+                <img src="image.png" alt="1">
+                <span>Let me Love You</span>
+                <span class="songListPlay"><span class="timestamp">05:34</span><i class="fa-regular fa-circle-play"></i>
+             </span>
             </div>
-            <div class="song">
-                <img src="image.png" alt="Song 2">
-                <div class="song-info">
-                    <h3>Song 2</h3>
-                    <p><b>KD DESIROCK</b></p>
-                </div>
-            </div>
-            <!-- Add more songs as needed -->
-        </div>
-        <audio id="audio-player" controls></audio>
-        <div class="controls">
-            <button id="prev-btn">Prev</button>
-            <button id="play-btn">Play</button>
-            <button id="next-btn">Next</button>
+        </div>       
+        <div class="songBanner"></div>
+    </div>    
+    <div class="Bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+                         
+            <i class="fa-3x fa-forward-step"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-regular fa-circle-play"></i>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/f07df3c697.js" crossorigin="anonymous"></script>
+        
     <script src="spotify.js"></script>
 </body>
 </html>

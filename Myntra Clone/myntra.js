@@ -1,5 +1,3 @@
-// product.js
-// This script handles displaying product details based on the product ID
 
 document.addEventListener('DOMContentLoaded', function() {
     const productId = getProductIdFromUrl();
@@ -12,9 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function displayProductDetails(productId) {
-    // Here you would fetch product details from a database or API based on the productId
-    // For this example, let's just display a hardcoded product
-    const product = {
+        const product = {
       id: productId,
       name: 'Product 1',
       price: '$50',
